@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="{% static '/css/myscript.css' %}">
+    <title>Sklep ogrodniczy</title>
+  </head>
+  <body>
+  <h1></h1>
+    <div class="mainContainer">
+        <div class="column active">
+          <div class="content">
+            <h1>O nas</h1>
+            <div class="box">
+              <h2>O nas</h2><br>
+              <p>Jesteśmy małym lokalnym sklepem ogrodniczym, który za
+                najważniejsze uznaje przykładanie jakości produktów do
+                oczekiwań naszych klientów oraz ...</p>
+                <a href="{% url 'gardenApp:about_us'%}" class="btn btn-dark" tabindex="-1" role="button" aria-disabled="true">Więcej</a>
+
+            </div>
+          </div>
+          <div class="bg bg1"></div>
+        </div>
+        <div class="column">
+          <div class="content">
+            <h1>Sklep</h1>
+            <div class="box">
+              <h2>Sklep</h2><br>
+              <p>Jeśli chcesz przejść do naszego sklepu kliknij przycisk, w naszym sklepie mamy do zaoferowania produkty najlepszej jakości w najlepszych cenach!
+              Przekonaj się sam</p>
+              <a href="{% url 'gardenApp:shop'%}" class="btn btn-dark" tabindex="-1" role="button" aria-disabled="true">Sklep</a>
+
+            </div>
+          </div>
+          <div class="bg bg2"></div>
+        </div>
+        <div class="column">
+          <div class="content">
+            <h1>Kontakt</h1>
+            <div class="box">
+              <h2>Kontakt</h2><br>
+              <p>Skontaktuj się z nami, przekonaj się sam co mamy do zaoferowania, dowiedz się gdzie dokładnie znajduję się nasz sklep byś mógł go odwiedzić.
+              Zapisz się do naszego newslettera by być nabieżąco ze wszystkimi promocjami!</p>
+              <a href="{% url 'gardenApp:contact' %}" class="btn btn-dark" tabindex="-1" role="button" aria-disabled="true">Kontakt</a>
+
+            </div>
+          </div>
+          <div class="bg bg3"></div>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript" src="{% static 'js/myscript.js' %}"></script>
+  </body>
+</html>

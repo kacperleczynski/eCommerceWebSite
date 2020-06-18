@@ -1,0 +1,67 @@
+body{
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+
+}
+section{
+  height: 100vh;
+  background: #648c51;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.banner{
+  background: url("/static/images/garden4.jpg");
+  background-size: cover;
+}
+section.banner .content{
+  text-align: center;
+
+}
+section.banner .content h1{
+  font-size: 120px;
+  color: white;
+  text-transform: uppercase;
+  margin: 0 0 20px;
+  padding: 0;
+}
+section.banner .content a{
+  border: 2px solid #fff;
+  color: #fff;
+  padding: 10px 40px;
+  font-size: 24px;
+  text-decoration: none;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+section.banner .content a:hover{
+  background: white;
+  border: 2px solid white;
+  color: #262626;
+}
+.box{
+  position: relative;
+  width: 600px;
+  height: 400px;
+  background: white;
+  text-align: center;
+}
+section.contact{
+  background: url("/static/images/garden7.jpg");
+  background-size: cover;
+}
+.box .btn{
+  border: 2px solid #9ade66;
+  color: #9ade66;
+  padding: 10px 40px;
+  font-size: 24px;
+  text-decoration: none;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.box .btn:hover{
+  background: #9ade66;
+  border: 2px solid white;
+  color: #262626;
+}

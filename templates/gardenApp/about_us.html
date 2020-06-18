@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Sklep ogrodniczy</title>
+    <link rel="stylesheet" href="{% static '/css/master2.css' %}">
+  </head>
+  <body>
+    <section class ="banner" id="banner">
+      <div class="content">
+        <h1>O nas</h1>
+        <a href="#post1">Start</a>
+        <a href="{% url 'gardenApp:index'%}">Powrót</a>
+      </div>
+    </section>
+    <section class="contact" id="post1">
+      <div class="post">
+        <div class="box">
+          <h1>O nas</h1>
+          <div class="post-title">
+            <p>Jesteśmy lokalnym sklepem ogrodnicznym, który do swoich zadań
+               podchodzi z pełną profesjonalnością. Jesteśmy wielkimi sympatykami
+               zielni oraz dbania o naszą planetę, możemy podzielić się z Tobą
+               wszystkim  tym czym dbamy o nasze ogrody i nie tylko.</p>
+          <a href="#banner" class="btn prev">Start</a>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>
